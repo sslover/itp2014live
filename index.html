@@ -1,0 +1,5324 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>ITP 2014 LIVE</title>
+	<meta name="description" content="ITP 2014 is LIVE, on the Web, and stuff.">
+	<link href="http://itp.nyu.edu/~sjs663/live-web/itp2014live/style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="http://itp.nyu.edu/~sjs663/live-web/itp2014live/modal.css">
+
+	<link rel="icon" type="image/png" href="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/cerrito.png">
+	<!-- STUFF YOU NEED FOR BEAUTYTIPS -->
+
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script src="http://cdn.peerjs.com/0.3/peer.js"></script>
+
+	<script src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<script src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/js/jquery.bt.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<script src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/js/jquery.hoverIntent.minified.js" type="text/javascript" charset="utf-8"></script>
+
+	<script src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/js/modal.js"></script>
+
+	<script src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/js/main.js"></script>
+
+</head>
+
+<body>
+
+<div id="bgImage">
+<img width="100%" src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/foosball.jpg">
+</div>
+
+<div class="wrapper">
+
+	<section class="semantic-content" id="welcome" tabindex="-1"
+	        role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+
+	    <div class="modal-inner">
+	        <header id="modal-label">Welcome to ITP2014 LIVE!</header>
+	        <div class="modal-content">
+	        	<p><span style="font-weight:bold;">Step 1: </span>You must enable your Webcam! (look at top of browser)</p>
+	        	<p><span style="font-weight:bold;">Step 2: </span>Enter your first initial and last name (like sslover for Sam Slover or lkhoo for Liz Khoo)</p>
+	        </div>
+	        <label>Enter your name:</label>
+	        <input id="userid" type="text" placeholder="First Initial Last Name">
+	        <a href="#!" class="close-action" title="Close this modal" data-dismiss="modal" id="submitButton">Submit</a>
+	        <footer><!-- Footer --></footer>
+	    </div>s
+
+	    <a href="#!" class="modal-close" title="Close this modal" data-close="Close"
+	        data-dismiss="modal">×</a>
+	</section>
+
+	<span style="padding:15px; float:left;" id="mallison">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/michael_allison..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content1">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/michael_allison..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Michael Allison        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Sax honkin&#039; great great great nephew of gunslingers            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Michael Allison is really energetic, outgoing, teaching, language learner(not really...) who likes to rock out and chill. <br/>
+       </div>
+	</div>
+
+	<script>
+	$("#mallison").bt({
+	  contentSelector: "$('#user-content1').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	});
+
+	</script>
+		<span style="padding:15px; float:left;" id="sbrenner">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/brenner..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content2">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/brenner..png" width="85" height="85" />
+        
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Sam Brenner        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            british lefty left-o            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Sam has a dually ferocious / playful attitude towards his ITP family.<br />
+<br />
+Sam is a good designer and a master of teaching design.<br />
+<br />
+Sam likes to dance to music with headphones - or - practice gymnastics (mostly cartwheels)<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#sbrenner").bt({
+	  contentSelector: "$('#user-content2').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="aburtch">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/burtch..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content3">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/burtch..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Allison Burtch        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            not so serious            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Allison Burtch throws a mean elbow. Counting to 10 in Thai. Explore the great outdoors on bike (avoiding sailboats). <br/>
+       </div>
+	</div>
+
+	<script>
+	$("#aburtch").bt({
+	  contentSelector: "$('#user-content3').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="hchen">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/harry_chen..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content4">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/harry_chen..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Harry Chen        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Harry is looking for a cool job and have a good roommate            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Harry Chen is dancing, travelling, making a toy<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#hchen").bt({
+	  contentSelector: "$('#user-content4').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="rbartley">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/bartley..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content5">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/bartley..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Ryan Bartley        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            compassionate worm killer            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Ryan Bartley got to school after 2pm today and a solenoid master and wants to eat in downtown la.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#rbartley").bt({
+	  contentSelector: "$('#user-content5').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="ccarter">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/cristina_carter..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content6">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/cristina_carter..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Christina Carter        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            The stationary Half Muchacha            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Christina Carter is cute. She likes sports. Christina likes waterskiing in her spare time.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#ccarter").bt({
+	  contentSelector: "$('#user-content6').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="vchen">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/valerie-chen..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content7">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/valerie-chen..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Valerie Chen        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            sea monkey guinea pig lover and liberator            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Valerie Chen has a great laugh, makes things work better, and likes to eat creme brulee. <br/>
+       </div>
+	</div>
+
+	<script>
+	$("#vchen").bt({
+	  contentSelector: "$('#user-content7').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="lkhoo">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/liz_khoo..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content8">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/liz_khoo..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Liz Khoo        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            The Saratoga Data Buster!            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Liz Khoo has a sweet smile, is a master in entertaining children, and likes to take it easy, cut loose, and kick back a tasty beverage.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#lkhoo").bt({
+	  contentSelector: "$('#user-content8').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="sgarner">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/garner..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content9">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/garner..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Scott Garner        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+                        </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#sgarner").bt({
+	  contentSelector: "$('#user-content9').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="sli">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/sonia_li..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content10">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/sonia_li..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Sonia Li        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Sonia is a unicorn but wishes she was Processing.            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Sonia Li laughs a lot. <br />
+<br />
+Sonia is a master of pro-saster. <br />
+<br />
+Sonia likes to day dream.  <br/>
+       </div>
+	</div>
+
+	<script>
+	$("#sli").bt({
+	  contentSelector: "$('#user-content10').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="mhowell">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/howell..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content11">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/howell..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Mack Howell        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            A laughing, dancing surfer who loves Vietnamese food.            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Mack Howell has unlocked the power of napping. Mack is an introductory Japanese master. He knows how to spend a sunday. <br/>
+       </div>
+	</div>
+
+	<script>
+	$("#mhowell").bt({
+	  contentSelector: "$('#user-content11').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="scordova">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/cordova..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content12">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/cordova..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Steve Cordova        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Random mountain climbing streets. Esteban is def a great kisser            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Thumb wars could be improved<br />
+Basketball<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#scordova").bt({
+	  contentSelector: "$('#user-content12').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="user13">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/erika_maher..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-emaher">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/erika_maher..png" width="85" height="85" />
+        
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Erika Maher        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Super Secret Songstress            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Erika has nice hands!<br />
+Also she has never been in a secret club (nor have I).<br />
+Erika studies Chinese<br />
+<br />
+Cooking with a wok<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#emaher").bt({
+	  contentSelector: "$('#user-content13').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="yparshina">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/yuliya_parshina..png" width="85" height="85" />
+			
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content14">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/yuliya_parshina..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Yuliya Parshina        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            ...            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Yuliya Parshina enjoys singing and hiking. She is master of film and likes to hang out with a cat, ride a bicycle really fast with wind in her hair and play songs on a guitar.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#yparshina").bt({
+	  contentSelector: "$('#user-content14').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="wliu">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/liu..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content15">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/liu..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Wyna Liu        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Wyna is a scuba diving superhero. (picture of a fish)            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Wyna Liu can come up with ideas on the fly!<br />
+Master of palindromes!<br />
+Wyna likes to play crosswords in a hammock while drinking wine. <br/>
+       </div>
+	</div>
+
+	<script>
+	$("#wliu").bt({
+	  contentSelector: "$('#user-content15').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="wmohseni">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/mohseni..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content16">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/mohseni..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Wajma Mohseni        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Master at moving odd body parts            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Wajma Mohseni is in Afganistan television and sang on tv in japan as a child. She likes to watch tv, eat snacks and put legs up on weekends.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#wmohseni").bt({
+	  contentSelector: "$('#user-content16').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="hmishin">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/mishin..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content17">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/mishin..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Hannah Mishin        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            self-expression mastermind            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Hannah Mishin is <br/>
+       </div>
+	</div>
+
+	<script>
+	$("#hmishin").bt({
+	  contentSelector: "$('#user-content17').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="mma">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/max_ma..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content18">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/max_ma..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Max Ma        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            max is a cookie lover, nice boy friend, successful            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Max Ma is master of cutting hair<br />
+ma&#039;s cookie are the best!<br />
+<br />
+Study hard<br />
+Crazy<br />
+Speak Louder<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#mma").bt({
+	  contentSelector: "$('#user-content18').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="smattu">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/surya_mattu..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content19">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/surya_mattu..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Surya Mattu        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Kind of British artistic indian            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Surya Mattu didn&#039;t  love his nickname and is a<br />
+Very handsome man<br />
+<br />
+Has leant how to find food trucks. <br />
+<br />
+Would like some r&r on the weekends. <br />
+<br />
+<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#smattu").bt({
+	  contentSelector: "$('#user-content19').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="jpedersen">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/pedersen.png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content20">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/pedersen.png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Jonas Pedersen        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Jonas is a small town hero            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		JONAS SMELLS GOOD. JONAS IS A MASTER ON LEARNING AND EXPLAINING COMPLEX NARRATIVES IN LITLE TIME! Jonas likes to ride a VERY tall bike in order to escape from a haunted cabin in the woods, Fireworks fly off of his head! Trees float in the background whenever he does this!<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#jpedersen").bt({
+	  contentSelector: "$('#user-content20').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="wng">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/wen-lei_ng..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content21">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/wen-lei_ng..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Wen-Lei Ng        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Inherently violent punch giver. Getting food energy to punch people. off.            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Wen-Lei Ng has got rythmn. <br />
+Lei is master of smiling and yet being apparently inherently violent.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#wng").bt({
+	  contentSelector: "$('#user-content21').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="aquinn">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/quinn..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content22">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/quinn..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Adam Quinn        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Dj Danger Bird            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Adam Quinn has an orange on his shirt, is the master of state governor trivia and tries to find ways to hide his filthy habits. <br/>
+       </div>
+	</div>
+
+	<script>
+	$("#aquinn").bt({
+	  contentSelector: "$('#user-content22').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="pzablah">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/patricia_zablah..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content23">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/patricia_zablah..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Patricia Zablah        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Patricia is the people knowing, rug-cutting foosballer            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Patricia Zablah is a master dancer. She thinks quick and likes childish handshakes. <br />
+Patricia leaves town on a bus, reads to children at a picnic, see movie about dervishes and layout at the beach. <br/>
+       </div>
+	</div>
+
+	<script>
+	$("#pzablah").bt({
+	  contentSelector: "$('#user-content23').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="twu">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/wu..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content24">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/wu..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Tianyu Wu        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+                        </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Tianyu Wu is a master of future teller<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#twu").bt({
+	  contentSelector: "$('#user-content24').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="ebutton">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/edward_button..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content25">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/edward_button..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Edward Button        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Sensitive-as-ice Button            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Edward Button is Learning/doing random crazy cool stuff.  Edward had an interesting childhood.  Watches movies and thinks &quot;how can I make this better???&quot;<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#ebutton").bt({
+	  contentSelector: "$('#user-content25').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="tarthur">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/arthur.png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content26">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/arthur.png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Tom Arthur        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Green-Button-Bike-Rider            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Tom Arthur is an IKEA hacker extraordinaire! Tom used a cat-call noise in Disney to grab people&#039;s attention. Tom wants to go hang out in the sun!!<br />
+<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#tarthur").bt({
+	  contentSelector: "$('#user-content26').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="jbrake">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/jorge_brake..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content27">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/jorge_brake..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Jorge Brake        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            South American Drummer Boy            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Jorge Brake is: intimate knowledge of Latin American culture, &Acirc;&iexcl;Espa&Atilde;&plusmn;ol!, and tans on the beach in Miami (underwater?).<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#jbrake").bt({
+	  contentSelector: "$('#user-content27').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="mfe">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/mary_fe..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content28">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/mary_fe..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Mary Fe        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            harmonise ying-yang 6 legged creature with a punch running jogging, exetcising moving the butt            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Mary Fe is the master of Portuguese pick-up lines. Very interesting aura.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#mfe").bt({
+	  contentSelector: "$('#user-content28').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="kbarry">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/kristen_barry..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content29">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/kristen_barry..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Kristen Barry        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            music driven worker            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Kristen Barry likes to create a robot to have a trip with, in the woods on the water close to their cabin. She likes to dance; origami.<br />
+<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#kbarry").bt({
+	  contentSelector: "$('#user-content29').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="blindmeier">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/bill_lindmeier..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content30">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/bill_lindmeier..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Bill Lindmeier        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Warren J &quot;Trivial Persuit&quot;            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Bill Lindmeier is so c-a-l-m (maybe thinks a LOT)<br />
+<br />
+Coding! Programming!<br />
+<br />
+From home to (hiking? running?) somewhere in NY<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#blindmeier").bt({
+	  contentSelector: "$('#user-content30').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="thewlett">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/hewlett..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content31">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/hewlett..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Tiffany Hewlett        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            dancing football enthusiast            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Tiffany Hewlett is gold color, sure pattern<br />
+<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#thewlett").bt({
+	  contentSelector: "$('#user-content31').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="cjamilkowski">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/carl_jamilkowski..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content32">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/carl_jamilkowski..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Carl Jamilkowski        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Military brat stoner TV producer            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Carl Jamilkowski is a guy with a techno background. Master: insta-glasses. Plays games all day! Xbox! <br/>
+       </div>
+	</div>
+
+	<script>
+	$("#cjamilkowski").bt({
+	  contentSelector: "$('#user-content32').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="acerrito">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/cerritto..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content33">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/cerritto..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Andrew Cerrito        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Playful ex-teacher            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Andrew Cerrito is a master of animal noises and he knows about vogueing.<br />
+Eats fish and ketchup and drinks beer.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#acerrito").bt({
+	  contentSelector: "$('#user-content33').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="smajluf">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/majluf..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content34">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/majluf..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Sergio Majluf        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Self learner, great sense of humor and teaches himself new things            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Sergio Majluf is fun, moves easily well in space and helps me find my balloon in spanish<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#smajluf").bt({
+	  contentSelector: "$('#user-content34').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="spimpley">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/sanniti_pimpley..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content35">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/sanniti_pimpley..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Sanniti Pimpley        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            smart, environment friendly girl            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Sanniti is master of eyebrow dancing. Knows a secret indian dance. <br />
+Sing bollywood movie songs & dance in her bedroom when no on&#039;s watching.<br />
+has lots of fun when she is comfortable<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#spimpley").bt({
+	  contentSelector: "$('#user-content35').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="vjoho">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/joho..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content36">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/joho..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Vanessa Joho        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Super Human Rights fighter            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Vanessa Joho is looking for things that are relazed and chill outside of ITP<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#vjoho").bt({
+	  contentSelector: "$('#user-content36').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="zqi">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/zhenzhen_qi..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content37">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/zhenzhen_qi..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Zhenzhen Qi        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            in control and warm            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Zhenzhen Qi is muslim chinese with a ritual head movement master of dance with head movement and can make her elbow into a butt likes to listen to music eat dessert with milk and touch a soft pig on her bed<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#zqi").bt({
+	  contentSelector: "$('#user-content37').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="cnarver">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/colin_narver..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content38">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/colin_narver..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Colin Narver        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            The drumming painter who almost MFAd Chicago            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Colin Narver is outgoing and nice. A master of languages?! Likes to hang at the beach, sail, sleep. <br/>
+       </div>
+	</div>
+
+	<script>
+	$("#cnarver").bt({
+	  contentSelector: "$('#user-content38').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="jpark">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/ju-young_park..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content39">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/ju-young_park..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Ju Young Park        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            water polo player. Ju likes to chill out on her bed.            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Ju Young Park is lonely. Ju Young is a master of programing and p.com.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#jpark").bt({
+	  contentSelector: "$('#user-content39').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="psu">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/peiqi_su..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content40">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/peiqi_su..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Peiqi Su        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            So definitely hate chess English             </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Peiqi Su is interested in the way other interact with thrie friends<br />
+<br />
+Master of Chinese pronousation<br />
+<br />
+<br />
+<br />
+Painting pandscapes& city scenes<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#psu").bt({
+	  contentSelector: "$('#user-content40').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="esmith">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/erin_smith..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content41">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/erin_smith..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Erin Smith        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Taxiderby Rollerdermy            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Erin Smith watches tennis with her mom. <br />
+Doggymaker wang!wang!<br />
+A master of gesture<br />
+She goes to the park, plays fetch with fido, gets ice cream and par-tays<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#esmith").bt({
+	  contentSelector: "$('#user-content41').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="ewagenknecht">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/wagenknecht..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content42">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/wagenknecht..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Emily Wagenknecht        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            the luddite emancipator            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Emily Wagenknecht is from oregon with positive energies she operates, master of vallet dance, she hangs out at under water trees<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#ewagenknecht").bt({
+	  contentSelector: "$('#user-content42').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="aqian">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/azure.png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content43">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/azure.png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Azure Tianran Qian        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Azure is a jazz loving opera hostess.            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Azure Tianran Qian has a good sense of humor + laughs a lot <br />
+<br />
+Lay I a park and listen to music.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#aqian").bt({
+	  contentSelector: "$('#user-content43').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="pterezakis">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/peter_terezakis..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content44">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/peter_terezakis..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Peter Terezakis        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+                        </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#pterezakis").bt({
+	  contentSelector: "$('#user-content44').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="mcortese">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/cortese..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content45">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/cortese..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Michelle Cortese        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Badass needle and ink yang.            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Michelle Cortese has a nice voice and Frieda who enjoy a fun greeting. A master of cripp waking and she&#039;s from Canada. She wants to be outside chilling in the sun! Can even make a glass of lemonade with personality&acirc;��looks cold and refreshing!<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#mcortese").bt({
+	  contentSelector: "$('#user-content45').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="settenheim">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/ettenheim..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content46">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/ettenheim..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Susan Ettenheim        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            xena princess chat social guru            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Susan Ettenheim is easy going.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#settenheim").bt({
+	  contentSelector: "$('#user-content46').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="aaydin">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/aydin..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content47">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/aydin..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Asli Aydin        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            the turkish daredevil rollerblader            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Asli Aydin is an origami master. she likes to go to museums and get drunk (walk of shame). 2 beautiful kisses :)<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#aaydin").bt({
+	  contentSelector: "$('#user-content47').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="ncoleman">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/nadine_coleman..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content48">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/nadine_coleman..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Nadine Coleman        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Mack is a laughing, dancing surfer who loves Vietnamese food.             </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Nadine Coleman is has unlocked the power of napping. Nadine is an introductory Japanese master. Nadine knows how to spend a sunday. <br/>
+       </div>
+	</div>
+
+	<script>
+	$("#ncoleman").bt({
+	  contentSelector: "$('#user-content48').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="acoym">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/coym..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content49">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/coym..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Alex Coym        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            The language-loving open book            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Alexandra Coym likes to write &quot;Hi5&quot; on everything. She is the finger-splitting, face-flicking master. Get drunk while sunbathing on the beach.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#acoym").bt({
+	  contentSelector: "$('#user-content49').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="tgupta">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/gupta..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content50">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/gupta..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Tarana Gupta        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Tarana the drumist illustrator            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Tarana Gupta is a master of cursing angrily in Hindi, and has a lovely voice and accent.<br />
+Likes to sleep on saturdays and sundays.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#tgupta").bt({
+	  contentSelector: "$('#user-content50').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="rgross-brown">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/brown..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content51">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/brown..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Rafael Gross-Brown        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            wants to learn a music instrument            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Rafael Gross-Brown likes line dancing;master of signing madonna songs in guarani (???); wants to sleep; <br/>
+       </div>
+	</div>
+
+	<script>
+	$("#rgross-brown").bt({
+	  contentSelector: "$('#user-content51').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="djiang">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/dd_yan_jiang..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content52">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/dd_yan_jiang..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			DD Yang Jiang        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+                        </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		DD Yang Jiang is ceramic traveller.<br />
+DD is a lord :) and she is friendly.<br />
+Dd creates shadow puppets.<br />
+DD dream trees!<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#djiang").bt({
+	  contentSelector: "$('#user-content52').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="ndzurny">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/natasha_dzurny..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content53">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/natasha_dzurny..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Natasha Dzurny        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Mac loving&#039; tech junkie jewel girl            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Natasha Dzurny is forgetful about iPad chargers.  Master of controlling Macs with voice and enjoys selling devices and making money and shopping online.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#ndzurny").bt({
+	  contentSelector: "$('#user-content53').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="jjung">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/jiyoung-jung..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content54">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/jiyoung-jung..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Jess Jiyoung Jung        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            a chatty whale             </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Jess Jiyoung jung is married<br />
+<br />
+Jess taught how to say hello with WAVE <br />
+<br />
+Jess wants to sleep on her spare time!<br />
+<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#jjung").bt({
+	  contentSelector: "$('#user-content54').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="rmeacham">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/meacham.png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content56">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/meacham.png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Rose Meacham        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            NeuroRose            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Rose Meacham is master of Japanese.<br />
+<br />
+Reading!<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#rmeacham").bt({
+	  contentSelector: "$('#user-content56').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="mmelki">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/myriam_melki..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content57">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/myriam_melki..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Myriam Melki        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Acting Sasha Fierce            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Myriam Melki is lactose intolerant.<br />
+<br />
+Master seafairy.<br />
+<br />
+Loves singing with wine and play tennis in front of her kTv<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#mmelki").bt({
+	  contentSelector: "$('#user-content57').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="bpeterson">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/brett_peterson..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content58">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/brett_peterson..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Brett Peterson        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            The Cali-Bred Family Man            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Brett Peterson is wearing glasses; a master of hand puppets and meatloaf. In his spare time, he likes to sail around manhattan<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#bpeterson").bt({
+	  contentSelector: "$('#user-content58').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="hmoon">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/hanna_moon..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content59">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/hanna_moon..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Hanna Moon        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+                        </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#hmoon").bt({
+	  contentSelector: "$('#user-content59').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="kpeng">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/kang-ting_peng..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content60">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/kang-ting_peng..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Kang-Ting Peng        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            literaly wood flute piper            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Kang-Ting Peng is disgner into video. programming is challenging. Master of dumplings and now hair cuts. draw pictures  on small piece of paper.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#kpeng").bt({
+	  contentSelector: "$('#user-content60').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="dwatts">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/donna_miller_watts..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content61">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/donna_miller_watts..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Donna Miller Watts        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+                        </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#dwatts").bt({
+	  contentSelector: "$('#user-content61').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="oshapira">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/omer_shapira..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content62">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/omer_shapira..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Omer Shapira        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            HyperActive-Jailbreak-Artist            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Omer Shapira is good with awkward moments.<br />
+<br />
+MASTER OF EFFICIENCY<br />
+<br />
+Omer Likes to do Karate, & do Math.<br />
+While screaming.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#oshapira").bt({
+	  contentSelector: "$('#user-content62').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="ywang">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/yang-wang..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content63">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/yang-wang..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Yang Wang        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            play games - WOW,   drink, eat, sleep            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Yang Wang is a nice guy with a cute smile. <br />
+<br />
+Yang is a master of Sichuan Food.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#ywang").bt({
+	  contentSelector: "$('#user-content63').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="jzehngebot">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/jay_zehngebot..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content64">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/jay_zehngebot..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Jay Zehngebot        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Jay &quot;C.A.M.&quot; Z - &quot;Considerate&quot;, &quot;Make Things Happen&quot;,&quot;Good Listen            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Jay Zehngebot&#039;s Mother uses the &quot;time out&quot; hand-sign. Productive computing - immersing mind into the unknown and making sense of it w/o disturbing its chaos and entropy*. <br />
+<br />
+*this part, especially.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#jzehngebot").bt({
+	  contentSelector: "$('#user-content64').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="asherwood">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/sherwood..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content65">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/sherwood..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Aaron Sherwood        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Aaron is unique in his unknown            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Aaron has a good sense of humor and a supple ear<br />
+Aaron is a master of rhythm<br />
+Aaron likes to be with his wife in his spare time<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#asherwood").bt({
+	  contentSelector: "$('#user-content65').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="asigler">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/andy_sigler.png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content66">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/andy_sigler.png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Andy Sigler        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            MAX-Master-Mono            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Andy Sigler is successful with minimal effort, the master of teaching weird things in a funny way, and he can&#039;t be doing that well at ITP if he is slacking, so he&#039;s probably underestimating himself, and usually going through reddit thinking what he can give to the world.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#asigler").bt({
+	  contentSelector: "$('#user-content66').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="nsolorzano">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/solorzano..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content67">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/solorzano..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Norah Solorzano        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            The secret singer and dancer            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Norah Solorzano is  a baker extraordinaire!! She knows many ways to make food delightful.<br />
+<br />
+She has a cool dad.<br />
+<br />
+With the whole  weekend of f she&#039;d go outside and swim and play with a friend.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#nsolorzano").bt({
+	  contentSelector: "$('#user-content67').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="kward">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/karl-ward.png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content68">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/karl-ward.png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Karl Ward        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            playing drums            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Karl Ward is the busy bee; doesn&#039;t care about his birthday; master of easy distractions and computational graffiti; knows how to draw a duck with an ampersand (now)<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#kward").bt({
+	  contentSelector: "$('#user-content68').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="pzaragoza">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/zaragoza..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content69">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/zaragoza..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Pia Zaragoza        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            wheat flour death rapper lover            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Pia Zaragoza is exotic and enjoys snoop dog.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#pzaragoza").bt({
+	  contentSelector: "$('#user-content69').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="fyang">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/fang-yu_yang..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content70">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/fang-yu_yang..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Fang-Yu Yang        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            want to make a big performance            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Fang-Yu Yang is master of speachless <br />
+She needs a bicycle.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#fyang").bt({
+	  contentSelector: "$('#user-content70').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="iyoon">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/ilwon_yoon..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content71">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/ilwon_yoon..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Ilwon Yoon        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            the curios speechless spicy man            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Ilwon Yoon is irrelevant red glass<br />
+<br />
+ilwon is finger bending master<br />
+<br />
+ilwon likes to fly when he does he likes to sit by the emergency exit<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#iyoon").bt({
+	  contentSelector: "$('#user-content71').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="jzhao">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/jing_zhao..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content72">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/jing_zhao..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Jing Zhao        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+                        </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#jzhao").bt({
+	  contentSelector: "$('#user-content72').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="srothberg">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/rothberg..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content73">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/rothberg..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Sarah Rothberg        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Sarah has the coolest hairdo in ITP            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Her school had more than 3,000 student!<br />
+& She has soft hands! SARAH IS MASTER OF MAKING US GO SOFT. Camping in the woods with friends, making bonfires and sleeping in tents. <br/>
+       </div>
+	</div>
+
+	<script>
+	$("#srothberg").bt({
+	  contentSelector: "$('#user-content73').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="nbehbahni">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/negar_behbahani..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content74">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/negar_behbahani..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Negar Behbahani        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            learn more about other culture            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Negar Behbahani is a master of  the subtleties of Persian words.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#nbehbahni").bt({
+	  contentSelector: "$('#user-content74').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="jcapogna">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/john_capogna..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content75">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/john_capogna..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			John Capogna        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            John is a world hitchhiker            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		John Capogna embraces things extraordinary.<br />
+<br />
+John is good at twirling his beard.<br />
+<br />
+John likes to get bitten by fish and say that he&#039;s Andres.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#jcapogna").bt({
+	  contentSelector: "$('#user-content75').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="sbhagat">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/bhagat..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content76">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/bhagat..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Shilpan Bhagat        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            head shaking tech geek            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Shilpan Bhagat knows how to write his name in Koran now! Knows Yoga is more popular in NYC than India and wants to work on his pcomp project<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#sbhagat").bt({
+	  contentSelector: "$('#user-content76').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="yfeng">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/yu-ting_feng..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content77">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/yu-ting_feng..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Yu-Ting Feng        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Taiwan noodle breakfast            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Yu-Ting Feng want to grow up to become a painter when she was a kid.<br />
+Master of being a daughter. Drink water by the ocean under.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#yfeng").bt({
+	  contentSelector: "$('#user-content77').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="tbryant">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/bryant..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content78">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/bryant..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Todd Bryant        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            &quot;Unique&quot; Chris Columbus            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Big smile pleasant.  Ambient screen color control.  Also a master and generating calm zones = beard mastery. Biking super fast to the park with lots of trees = happy times<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#tbryant").bt({
+	  contentSelector: "$('#user-content78').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="adiracles">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/diracles..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content79">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/diracles..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Allie Diracles        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            lovely, good dancer            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Allie Diracles uses the word &quot;boom&quot; a lot.  Allie is a master of dialect and thinking of good ideas really quickly.  Yoga + music = a sweet relaxing day<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#adiracles").bt({
+	  contentSelector: "$('#user-content79').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="hjo">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/hanbyol_jo..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content80">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/hanbyol_jo..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Hanbyul Jo        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Pierced nail biter            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Hanbyul Jo has a futre in bharatnatyam<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#hjo").bt({
+	  contentSelector: "$('#user-content80').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="xchen">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/xuedi_chen..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content81">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/xuedi_chen..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Xuedi Chen        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Used to play marimba and an oil painting genius            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Xuedi Chen thinks this is a weird and fun presentation, is a master of tattoo art, will spend weekend illegal street car racing/or thieving.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#xchen").bt({
+	  contentSelector: "$('#user-content81').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="alavigne">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/lavigne..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content82">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/lavigne..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Anne-Marie Lavigne        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Singing anything, Sailing anywhere            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Anne-Marie Lavigne is a master of &quot;long-winded-French-political-speech&quot;.<br />
+<br />
+She can keep a boat stable but will still miss the right side of a card.<br />
+<br />
+On a free week-end, she is on a boat, headed to a distant encampment, plotting, planning, singing.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#alavigne").bt({
+	  contentSelector: "$('#user-content82').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="msabadosreis">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/maria-paola_saba..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content83">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/maria-paola_saba..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Maria Paula Saba dos Reis        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Dark electronic elastic girl            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Maria Paula has a hard time reading small blue writing from far away, but that is quite all right. <br />
+<br />
+Mari is a master of arm twisting. <br />
+<br />
+Acrobatics.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#msabadosreis").bt({
+	  contentSelector: "$('#user-content83').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="jlim">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/joseph_lim..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content84">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/joseph_lim..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Joseph Lim        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            The brownstone owning molecular gastronomist            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Joseph Lim is swing dance yeeaaahh<br />
+A master of Hawaiian fish pronunciation.<br />
+Making crab cake foam, peanut butter noodles, and apple jelly on really high tables.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#jlim").bt({
+	  contentSelector: "$('#user-content84').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="efinnegan">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/erin_finnegan..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content85">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/erin_finnegan..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Erin Finnegan        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Anime Yoyo Player            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		&quot;Erin Finnegan does anime!&quot; [Editor&#039;s Note: She reviews anime for a magazine.]  She knows how to write in Japanese (sort of). &quot;In spare time, she would drink tons of beers between bar and garden somewhere.&quot; [Ed. Note: Perhaps a beer garden.]<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#efinnegan").bt({
+	  contentSelector: "$('#user-content85').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="dlobser">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/david_lobser..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content86">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/david_lobser..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			David Lobser        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            neo the grey            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		David Lobser has a cousin and is a master of japanese comedy and is making puppet hands to leave actual hands for something else, bwahahahahahahahahahahaha<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#dlobser").bt({
+	  contentSelector: "$('#user-content86').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="glee">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/gj_lee..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content87">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/gj_lee..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			GJ Lee        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+                        </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#glee").bt({
+	  contentSelector: "$('#user-content87').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="yshin">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/youjin_shin..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content88">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/youjin_shin..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Youjin Shin        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Dreamy Shin            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Youjin Shin is from Korea. In Korea, greetings are longer and more formal. The smiles take over the entire face generating a beam of warmth. Youjin is a master of billiard in korean style. Youjin likes to go for a walk in the park, read and enjoy a pleasant tune.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#yshin").bt({
+	  contentSelector: "$('#user-content88').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="tstein">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/talya-stein.png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content89">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/talya-stein.png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Talya Stein        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Animal lover and sculpture.            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Israelies can have a whole conversation using one word- &#039;sababa&#039;.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#tstein").bt({
+	  contentSelector: "$('#user-content89').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="jsparks">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/jonathan_sparks..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content90">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/jonathan_sparks..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Jonathan Sparks        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+                        </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Jonathan Sparks is Master in reading small writing<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#jsparks").bt({
+	  contentSelector: "$('#user-content90').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="bkauffman">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/kauffman..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content91">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/kauffman..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Ben Kauffmann        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Russian Chinese math writer            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		He lived in Chicago and has a firm handshake. He is a master of the Ali G snap. If he had the weekend off, he would watch TV or use up the toilet paper.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#bkauffman").bt({
+	  contentSelector: "$('#user-content91').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="dmiranda">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/dexter_miranda..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content92">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/dexter_miranda..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Dexter Miranda        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            .            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#dmiranda").bt({
+	  contentSelector: "$('#user-content92').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="jwasserman">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/jon_wasserman..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content93">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/jon_wasserman..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Jon Wasserman        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Jon, the movie trivia genius who never ever forgets            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Jon Wasserman is a uber creative guy that likes to try new things<br />
+<br />
+Jon is a master of personal well being<br />
+<br />
+Jon likes to go camping, possibly getting there on his bike and relax by the mountains, preferably in a hammock. He is a nature boy.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#jwasserman").bt({
+	  contentSelector: "$('#user-content93').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="lfoo">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/louise_foo..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content94">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/louise_foo..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Louise Foo        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            loui mou. Danish people steal american slang & highfives            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Louise Foo is master in danish. wants to go to a tropical island, hang in a hammock and listen to music<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#lfoo").bt({
+	  contentSelector: "$('#user-content94').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="ataraciuk">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/taraciuk..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content95">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/taraciuk..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Andres Taraciuk        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Andres is a gypsy punk unicorn            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Andres Taraciuk is a copycat, and is a master of keeping his eye on the goal.<br />
+<br />
+In his free time, Andres likes to think about taking trips to Boston<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#ataraciuk").bt({
+	  contentSelector: "$('#user-content95').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="ntschechaniuk">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/natalie_tschechaniuk..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content96">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/natalie_tschechaniuk..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Natalie Tschechaniuk        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Natty History at the Beach            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Natalie Tschechaniuk is a warm hearted person with an easy going character who knows how to buy &quot;doooonuts&quot; with a Minnesota accent and likes to slide down giant bacon strips attached to trees then go stand near a bunch of pumpkins.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#ntschechaniuk").bt({
+	  contentSelector: "$('#user-content96').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="xwang">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/xinran_wang..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content97">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/xinran_wang..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Xinran Wang        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            From Beijing. Online ID is enemydodo.            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Xinran Wang just shake hands in China.<br />
+<br />
+Enemy Dodo!<br />
+<br />
+Xinran is a master of Beijing + bad-ass haircut.<br />
+<br />
+Enjoys Sunshine lying on the beach, eating seafood.<br />
+Likes fresh air, ocean, sands.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#xwang").bt({
+	  contentSelector: "$('#user-content97').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="kadee">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/katie_adee..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content98">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/katie_adee..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Katie Adee        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            heart crash survivor            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Katie Adee is flirt with you,sleeper hold and Italian cursing, watch football while pleasantly drunk while yelling after a fantastic bike ride.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#kadee").bt({
+	  contentSelector: "$('#user-content98').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="wcanine">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/will_canine..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content99">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/will_canine..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Will Canine        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Gypsy Android            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Will Canine says &quot;hella&quot; a lot. And &quot;word.&quot; He does not say &quot;rad&quot; so much. <br />
+<br />
+Will loves children and is an entertainment master.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#wcanine").bt({
+	  contentSelector: "$('#user-content99').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="mmilazzo">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/milazzo..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content100">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/milazzo..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Michael Milazzo        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            You have an earing.            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Michael Milazzo is the king of swing!<br />
+Michael is the duke of shaking it!<br />
+Likes to eat 4.5 foot sandwiches.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#mmilazzo").bt({
+	  contentSelector: "$('#user-content100').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="skim">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/su-hyun-kim..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content101">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/su-hyun-kim..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Su Hyun Kim        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Two-handed cat mom :)            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Su Hyun Kim is pretty :)<br />
+Su is a master of packaging design!<br />
+Su got my telepathy!<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#skim").bt({
+	  contentSelector: "$('#user-content101').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="mshahrooz">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/moe_shahrooz..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content102">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/moe_shahrooz..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Moe Shahrooz        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            British Rapper Superstar            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Moe Shahrooz is award winningness, making their finger curve crazy. Drinks with footballs to make hand gestures.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#mshahrooz").bt({
+	  contentSelector: "$('#user-content102').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="drios">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/david_rios..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content103">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/david_rios..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			David Rios        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            chickens and trains            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		David Rios is hoping for the jets to lose while chilling on a beach house.  he knows good hair style shop and super familiar with the subway. Community is actually funny.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#drios").bt({
+	  contentSelector: "$('#user-content103').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="gsasson">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/gal-sasson.png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content104">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/gal-sasson.png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Gal Sasson        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Dad who plays a saxophone            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Gal Sasson is goofy, good-natured, and taller than I remembered.<br />
+Teaching the meaning of words in hebrew that don&#039;t have a direct translation in English.<br />
+Wants to play with his kid on a free weekend.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#gsasson").bt({
+	  contentSelector: "$('#user-content104').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="csinders">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/sinders..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content105">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/sinders..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Caroline Sinders        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Big format picture taker/lecturer            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Caroline Sinders likes clogging <br />
+Colin interpreted what I want to do in down time (which is a large scale construction paper project) as take pyschodelic drugs and dream bout nature).<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#csinders").bt({
+	  contentSelector: "$('#user-content105').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="vfreire">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/freire..png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content106">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/freire..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Vitor Freire        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Samba dancer brazilian storyteller            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Vitor secretly wishes every form of communication could just be dance. <br />
+<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#vfreire").bt({
+	  contentSelector: "$('#user-content106').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="cpolcari">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/christina-polcari.png" width="85" height="85" />
+			
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content107">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/christina-polcari.png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Christina Polcari        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            Not technically an alcoholic            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Christina Polcari is not technically an alcoholic but definitely addicted to AA. She is a master at building forts in the woods. In her spare time, she talks you into going to an Alcoholics Anonymous meeting by explaining why it&#039;s the best kept secret society on the planet, and why it has nothing to do with alcohol.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#cpolcari").bt({
+	  contentSelector: "$('#user-content107').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+		<span style="padding:15px; float:left;" id="sslover">
+		<a href="javascript:void(0);">
+			<img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/slover..png" width="85" height="85" />
+		</a>
+	</span>
+
+	<div style='display:none;' id="user-content108">
+        <div style="float:left;">
+        <img src="http://itp.nyu.edu/~sjs663/live-web/itp2014live/img/slover..png" width="85" height="85" />
+        </div>
+        <div style ="float:left; margin-left:10px; margin-top:20px; width:212px;">
+        	<div style="font-size:18px">
+			Sam Slover        	</div>
+            <div style ="font-size:14px; font-style:italic;">
+            The Hip Hop Buddha            </div>
+         </div>
+        <div style="clear:left;"></div>
+       <div>
+		<hr>
+		Sam Slover is the hip hop buddha. He is a master of juggling. In his spare time, he likes exploring new hole-in-the-wall restaurants.<br/>
+       </div>
+	</div>
+
+	<script>
+	$("#sslover").bt({
+	  contentSelector: "$('#user-content108').html()", /*get text of inner content of hidden div*/
+	  //ajaxPath: 'small-ajax/bubble.php',
+	  trigger: 'click',
+	  positions: ['left','right','top','bottom'],
+	  fill: '#000',
+	  strokeWidth: 0,
+	  //strokeStyle: '#ccc',
+	  spikeLength: 60,
+	  spikeGirth: 20,
+	  closeWhenOthersOpen: true, 
+	  width: 310,
+	  overlap: 0,
+	  centerPointY: .5,
+	  centerPointX: .5,
+	  cssStyles: {
+		fontFamily: '"myriad pro",Helvetica,Arial,Verdana,sans-serif', 
+		fontSize: '12px'
+		//padding: '10px 10px 10px 10px'
+	  }
+	 
+		});
+	</script>
+	
+</div>
+
+<video id="myVideo" width="85" height="85" style="display:none;" muted></video>
+</body>
+</html>
